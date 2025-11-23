@@ -31,7 +31,7 @@ public class ReturnPotionEvents {
     public static final String TAG_ACTIVE = "ret_pot_active";
 
     @SubscribeEvent
-    public static void onEffectAdded(MobEffectEvent.Added event){
+    public static void onEffectAdded(MobEffectEvent.Added event) {
         LivingEntity entity = event.getEntity();
         MobEffectInstance instance = event.getEffectInstance();
 
@@ -55,7 +55,7 @@ public class ReturnPotionEvents {
     }
 
     @SubscribeEvent
-    public static void onEffectExpired(MobEffectEvent.Expired event){
+    public static void onEffectExpired(MobEffectEvent.Expired event) {
         LivingEntity entity = event.getEntity();
         MobEffectInstance instance = event.getEffectInstance();
 

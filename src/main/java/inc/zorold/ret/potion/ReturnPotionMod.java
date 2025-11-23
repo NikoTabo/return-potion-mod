@@ -18,19 +18,17 @@ import org.slf4j.Logger;
 @Mod("return_potion_zoro")
 public class ReturnPotionMod {
     public static final String MOD_ID = "return_potion_zoro";
-    public static final Logger LOGGER = LogUtils.getLogger();
 
     public ReturnPotionMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         ReturnPotionRegistry.EFFECTS.register(modEventBus);
-        ReturnPotionRegistry.POTIONS.register(modEventBus);
         ReturnPotionRegistry.ITEMS.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event){
+    private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             BrewingRecipeRegistry.addRecipe(new ReturnPotionRecipe());
             BrewingRecipeRegistry.addRecipe(new LongReturnPotionRecipe());
@@ -40,6 +38,8 @@ public class ReturnPotionMod {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ReturnPotionRegistry.RETURN_POTION);
+            event.accept(ReturnPotionRegistry.LONG_RETURN_POTION);
             event.accept(ReturnPotionRegistry.ADVANCED_RETURN_POTION);
         }
     }

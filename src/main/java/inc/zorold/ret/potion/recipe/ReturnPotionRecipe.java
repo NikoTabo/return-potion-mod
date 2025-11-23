@@ -10,7 +10,7 @@ import net.minecraftforge.common.brewing.IBrewingRecipe;
 public class ReturnPotionRecipe implements IBrewingRecipe {
     @Override
     public boolean isInput(ItemStack itemStack) {
-        if (itemStack.getItem() == Items.POTION){
+        if (itemStack.getItem() == Items.POTION) {
             return PotionUtils.getPotion(itemStack) == Potions.AWKWARD;
         }
         return false;
@@ -23,12 +23,11 @@ public class ReturnPotionRecipe implements IBrewingRecipe {
 
     @Override
     public ItemStack getOutput(ItemStack input, ItemStack ingredient) {
-        if (!isInput(input) || !isIngredient(ingredient)){
+        if (!isInput(input) || !isIngredient(ingredient)) {
             return ItemStack.EMPTY;
         }
 
-        ItemStack result = input.copy();
-        PotionUtils.setPotion(result, ReturnPotionRegistry.RETURN_POTION.get());
+        ItemStack result = new ItemStack(ReturnPotionRegistry.RETURN_POTION.get());
 
         return result;
     }

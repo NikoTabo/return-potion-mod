@@ -17,7 +17,7 @@ import net.minecraft.world.level.Level;
 import java.util.List;
 
 public class AdvancedReturnPotionItem extends Item {
-    public AdvancedReturnPotionItem(Properties properties){
+    public AdvancedReturnPotionItem(Properties properties) {
         super(properties);
 
 
@@ -55,13 +55,12 @@ public class AdvancedReturnPotionItem extends Item {
         if (entity instanceof ServerPlayer player) {
             CompoundTag itemTag = stack.getOrCreateTag();
 
-            if (itemTag.getBoolean(ReturnPotionEvents.TAG_ACTIVE)){
+            if (itemTag.getBoolean(ReturnPotionEvents.TAG_ACTIVE)) {
                 if (player.getUUID().equals(itemTag.getUUID("OwnerUUID"))) {
                     ReturnPotionEvents.returnPlayerBack(player, itemTag);
 
                     return new ItemStack(Items.GLASS_BOTTLE);
-                }
-                else {
+                } else {
                     String ownerName = "Unknown"; // Текст по умолчанию
 
                     if (itemTag.contains("OwnerName")) {

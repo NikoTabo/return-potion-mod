@@ -1,4 +1,4 @@
-# Recall potion
+# Return potion
 Forge мод на зелья возврата на точку респавна для Minecraft.
 
 Мод добавляет два вида зелий:

@@ -1,0 +1,13 @@
+{
+  "effect.return_potion_zoro.return_effect": "Recall",
+  "item.minecraft.potion.effect.return_potion": "Potion of Return",
+  "item.minecraft.potion.effect.long_return_potion": "Potion of Return",
+  "item.minecraft.splash_potion.effect.return_potion": "Splash Potion of Return",
+  "item.minecraft.splash_potion.effect.long_return_potion": "Splash Potion of Return",
+  "item.minecraft.lingering_potion.effect.return_potion": "Lingering Potion of Return",
+  "item.minecraft.lingering_potion.effect.long_return_potion": "Lingering Potion of Return",
+  "item.return_potion_zoro.advanced_return_potion": "Advanced Return Potion",
+  "tooltip.return_potion_zoro.advanced_potion.active": "Drink to resume your journey",
+  "tooltip.return_potion_zoro.advanced_potion.inactive": "Drink to return home",
+  "message.return_potion_zoro.wrong_owner": "This potion belongs to player %s!"
+}

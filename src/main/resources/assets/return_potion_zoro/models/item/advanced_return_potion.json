@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "return_potion_zoro:item/advanced_return_potion"
+  }
+}

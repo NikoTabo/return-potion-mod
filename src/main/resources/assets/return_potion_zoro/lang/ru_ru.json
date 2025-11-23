@@ -1,0 +1,13 @@
+{
+  "effect.return_potion_zoro.return_effect": "Возвращение",
+  "item.minecraft.potion.effect.return_potion": "Зелье йо-йо",
+  "item.minecraft.potion.effect.long_return_potion": "Зелье йо-йо",
+  "item.minecraft.splash_potion.effect.return_potion": "Взрывное зелье йо-йо",
+  "item.minecraft.splash_potion.effect.long_return_potion": "Взрывное зелье йо-йо",
+  "item.minecraft.lingering_potion.effect.return_potion": "Осадочное зелье йо-йо",
+  "item.minecraft.lingering_potion.effect.long_return_potion": "Осадочное зелье йо-йо",
+  "item.return_potion_zoro.advanced_return_potion": "Зелье возврата",
+  "tooltip.return_potion_zoro.advanced_potion.active": "Выпейте, чтобы продолжить путешествие",
+  "tooltip.return_potion_zoro.advanced_potion.inactive": "Выпейте, чтобы вернуться домой",
+  "message.return_potion_zoro.wrong_owner": "Это зелье принадлежит игроку %s!"
+}
